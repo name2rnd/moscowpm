@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<workbook>
+  <worksheet name="Отчет">
+    <format border="1">
+      <format bold="1" align="center">
+        <row>
+          <loop name="HEADERS">
+            <cell width="20" text="$TITLE"/>
+          </loop>
+        </row>
+      </format>
+      <loop name="DATA">
+        <row> 
+          <format color="red"><cell text="$MODEL"/></format>
+          <cell><var name="PRODUCER" /></cell>
+          <format num_format="# ##0.00"><cell><var name="PRICE" /></cell></format>
+        </row>
+      </loop>
+    </format>
+  </worksheet>
+</workbook>
